@@ -2,8 +2,6 @@ body {
     margin: 0;
     background-color: lightpink;   
     
-
-    
 }
 .dots {
     border-style: dotted;
@@ -73,4 +71,32 @@ h3{
 p{
     font-size: 125%;
     color: black;
+}
+
+/*This sets the background color of the buttons, as well as their borders, padding, etc.*/
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    
+/*The color that the buttons change to when hovered over.*/
+}
+button.accordion.active, button.accordion:hover {
+    background-color: #ffc0cb;
+}
+
+/*This sets the color of the text box (once opened).*/
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
