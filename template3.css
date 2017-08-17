@@ -2,12 +2,20 @@ body {
     margin: 0;
     background-color: lightpink;   
     
+
     
 }
 .dots {
     border-style: dotted;
     border-width: 40px;
 }
+
+.padding{
+    border: 1px solid grey;
+    background-color: white;
+    padding: 50px 30px 50px 80px;
+}
+
 .firstimage {
     display: block;
     margin-top: 0px;
@@ -37,13 +45,14 @@ li a.active {
 }
 
 li a:hover:not(.active) {
-    background-color: dimgrey;
+    background-color: dimgray;
     color: white;
 }
+
 h1 {
     color: white;
     text-align: center;
-    font-size:300%;
+    font-size:400%;
     border-style: dotted;
     border-width: 40px;
     font-family: cursive;
