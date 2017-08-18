@@ -1,57 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-<link rel="stylesheet" href="main_template.css">
-<title>How to Deal With Periods</title>
-    </head>
-        
-<!--This links this HTML file to the main CSS template.-->
-
+        <!--This links this HTML file to the main CSS template.-->
+        <link rel="stylesheet" href="main_template.css">
+        <!--This links this HTML file to the font templates.-->
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Dr+Sugiyama" />
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nixie+One" />
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" />
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cabin" />
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Old+Standard+TT" />
+        <title>How to Deal With Periods</title>
+</head>
 <body>
-<!--This is formatting for the top bar and side directory bar-->    
+
+</body>
+
+<!--This links this HTML file to the loading animation.-->
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+    
+  <!--This is formatting for the top bar and side directory bar-->    
 <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav navbar-right">
         <li><a href ="period_homepage.html"> Home </a></li>
         <li><a href="basic_bio.html">Biology</a></li>
-        <li><a href="">Cramps</a></li>
-        <li><a href="how_to_deal_with_periods.html"> <font color = "palevioletred" > How to deal with periods </font> </a></li>
-        <li><a href="problems_around_the_world.html">Problems around the World</a></li>
+        <li><a href="how_to_deal_with_periods.html"> <font color = "palevioletred" > How to Deal with Periods </font> </a></li>
+        <li><a href="cramps.html">Cramps</a></li>
+        <li><a href="problems_around_the_world.html">Problems Around the World</a></li>
         <li><a href = "meme_page.html"> Period Memes </a></li>
     </ul>
 </div>
     
 <div style="margin-left:25%;padding:1px 16px;height:20px;">
-
-    <!--This CSS section sets the background color of the drop-down buttons, as well as their borders, padding, etc.-->
-    <style>
-        button.accordion {
-        background-color: #eee;
-        color: #444;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-        transition: 0.4s;
-    
-        /*The color that the buttons change to when hovered over.*/
-        }
-        button.accordion.active, button.accordion:hover {
-            background-color: #ffc0cb;
-        }
-
-        /*This sets the color of the text box (once opened).*/
-        div.panel {
-            padding: 0 18px;
-            background-color: white;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-        }
-
-    </style>
 
 
 <!--The following is the plain text of the page, as well as some pictures.-->
@@ -63,10 +44,10 @@
 <button class="accordion">What is PMS?</button>
 <div class="panel">
     <p>“PMS” stands for Premenstrual Syndrome-- basically, symptoms that a woman or girl may have for about a week to two weeks before they start menstruating. While symptoms like mild acne or food cravings can often be personally managed, it’s important to stay in communication with your doctor about your symptoms.</p>
-    <p> PMS can be affected by many factors including a person's diet. For example eating too little or too much of certain things can make PMS symptoms worse. If a women does not eat enough vitamins and minerals PMS symptoms can worsen. If a women eats lots of salty foods, her body can retain more water causing more bloating.</p>
+    <p> PMS can be affected by many factors-- including a person's diet. For example, eating too little or too much of certain things (such as vitamins and minerals) can make PMS symptoms worse. If a women eats lots of salty foods, her body will retain more water-- something that often causes more bloating.</p>
     </div>
     
-<button class="accordion">Common Symptoms of PMS:</button>
+<button class="accordion">Common Symptoms of PMS</button>
 <div class="panel">
     <ol>
         <li><a href="http://www.thefashionspot.com/beauty/178315-control-pms-breakouts-the-natural-way/">Acne</a></li>
@@ -102,7 +83,20 @@
 <div class="panel">
     <p>Menstrual cups have been around ever since tampons were invented, and there are two kinds. The first kind is a soft, flexible, and disposable cup similar to a diaphragm. The second is a reusable bell-shaped cup made out of latex or silicone that is cleaned after use. Both types collect menstrual fluid rather than absorbing it. Some women prefer menstrual cups as tampon alternatives as they tend to leak 0.5 times less often and also can be safely worn for up to 12 hours-- allowing women to change the cup (on average) 2.8 times less frequently than when using either tampons or pads. However, some women find menstrual cups difficult to insert and remove.</p>
     <img src="http://www.greencupofmaine.com/wp-content/uploads/2016/01/Instructions-Inerting.jpg" alt="how to use a menstrual cup"> 
-
+</div>
+<p></p>
+<button class="accordion">Sources</button>
+<div class="panel">
+        <p>
+            <a href="https://www.womenshealth.gov/a-z-topics/premenstrual-syndrome">"Before Your Period" information</a>
+            <a href="http://www.healthywomen.org/content/article/tampons-pads-or-menstrual-cups-whats-right-you">Information for pads, tampons, and menstrual cups</a>
+            <a href="https://humannhealth.com/wp-content/uploads/2016/03/How-To-Use-a-Sanitary-Pad-700x373.jpg">Pad diagram</a>
+            <a href="http://femininityonline.co.uk/wp-content/uploads/2015/09/non-applicator-tampon-insertion.png">Tampon diagram</a>
+            <a href="http://www.greencupofmaine.com/wp-content/uploads/2016/01/Instructions-Inerting.jpg">Menstrual cup diagram</a>
+            <a href="http://img.funtema.ru/07082015/japangifs/13.gif">Sidebar Sources</a>
+        </p>
+    </div>
+    
     <script>
         var acc = document.getElementsByClassName("accordion");
         var i;
@@ -120,31 +114,22 @@
         }
     </script>
 </div>
-    <!--The following sets the background.-->
-    <!--<style>
-body {
-    background-image: url("http://www.quotemaster.org/images/85/85ffea753ef8724b2da184d63fecaf05.jpg");
-    background-repeat: no-repeat;
-    background-position: right top;
-    margin-right: 200px;
-    background-attachment: fixed;
+
+</div>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
 }
-        </style>-->
-    
-<!--The following is a list of sources.-->
-<p> </p>
-Sources
-<small>
-    <ol>
-        <li><a href="https://www.womenshealth.gov/a-z-topics/premenstrual-syndrome">"Before Your Period" information</a></li>
-        <li><a href="http://www.healthywomen.org/content/article/tampons-pads-or-menstrual-cups-whats-right-you">Information for pads, tampons, and menstrual cups</a></li>
-        <li><a href="https://humannhealth.com/wp-content/uploads/2016/03/How-To-Use-a-Sanitary-Pad-700x373.jpg">Pad diagram</a></li>
-        <li><a href="http://femininityonline.co.uk/wp-content/uploads/2015/09/non-applicator-tampon-insertion.png">Tampon diagram</a></li>
-        <li><a href="http://www.greencupofmaine.com/wp-content/uploads/2016/01/Instructions-Inerting.jpg">Menstrual cup diagram</a></li>
-        <li><a href="http://www.designlovefest.com/wp-content/uploads/downloads/2014/07/WatercolorFlora2_by_JulieSongInk1.jpg">Background source</a></li>
-    </ol>
-</small>
-</div>
-</div>
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
 </body>
 </html>
