@@ -2,17 +2,18 @@ body {
     margin: 0;
     background-color: lightpink;   
     
-    
 }
 .dots {
     border-style: dotted;
     border-width: 40px;
 }
+
 .padding{
     border: 1px solid grey;
     background-color: white;
     padding: 50px 30px 50px 80px;
 }
+
 .firstimage {
     display: block;
     margin-top: 0px;
@@ -42,31 +43,32 @@ li a.active {
 }
 
 li a:hover:not(.active) {
-    background-color: dimgrey;
+    background-color: dimgray;
     color: white;
 }
+
 h1 {
     color: white;
     text-align: center;
-    font-size:500%;
+    font-size:400%;
     border-style: dotted;
     border-width: 40px;
     font-family: cursive;
 }
 h2{
     color: black;
-    font-size: 350%;
-    font-family:cursive;
+    font-size: 200%;
+    font-family:monospace;
 }
 
 h3{
-    font-size:200%;
+    font-size:150%;
     color: black;
+    font-family: fantasy;
+    
+    
 }
 p{
-    font-size: 100%;
+    font-size: 125%;
     color: black;
-    font-family:inherit;
 }
-
-
