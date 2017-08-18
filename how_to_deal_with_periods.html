@@ -1,57 +1,124 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>How to Deal With Periods</title>
-    </head>
-    
-<link rel="stylesheet" type="text/css" href="template3.css">
+<head>
+<link rel="stylesheet" href="template3%205.css">
+<title>How to Deal With Periods</title>
+</head>
+        
+<!--This links this HTML file to the main CSS template.-->
+
+<body>
 <!--This is formatting for the top bar and side directory bar-->    
 <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li> <a href ="period_homepage.html"> Home </a></li>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href ="period_homepage.html"> Home </a></li>
         <li><a href="basic_bio.html">Biology</a></li>
         <li><a href="">Cramps</a></li>
         <li><a href="how_to_deal_with_periods.html"> <font color = "palevioletred" > How to deal with periods </font> </a></li>
         <li><a href="big_period_problems.html">Problems around the World</a></li>
-        <li> <a href = "meme_page.html"> Period Memes </a></li>
-      </ul>
-    </div>
-    <div style="margin-left:25%;padding:1px 16px;height:4000px;">
-        
+        <li><a href = "meme_page.html"> Period Memes </a></li>
+    </ul>
+</div>
+    
+<div style="margin-left:25%;padding:1px 16px;height:20px;">
 
-<body>   
-    <!--The following is the plain text of the page, as well as some pictures.-->
+    <!--This CSS section sets the background color of the drop-down buttons, as well as their borders, padding, etc.-->
+    <style>
+        button.accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+    
+        /*The color that the buttons change to when hovered over.*/
+        }
+        button.accordion.active, button.accordion:hover {
+            background-color: #ffc0cb;
+        }
+
+        /*This sets the color of the text box (once opened).*/
+        div.panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+
+    </style>
+
+
+<!--The following is the plain text of the page, as well as some pictures.-->
     <h1> How To Deal With Periods</h1>
 <div class = "padding">
-    <h2>Before Your Period</h2>
-    “PMS” stands for Premenstrual Syndrome-- basically, symptoms that a woman or girl may have for about a week to two weeks before they start menstruating. While symptoms like mild acne or food cravings can often be personally managed, it’s important to stay in communication with your doctor about your symptoms.
-            
-        <h3>Common Symptoms of PMS (and how to deal):</h3>
-                <ol>
-                   <!-- <li><a href="http://www.thefashionspot.com/beauty/178315-control-pms-breakouts-the-natural-way/">Acne</a></li> -->
-                    <li>Swollen or tender breasts</li>
-                    <li>Feeling tired</li>
-                    <li>Trouble sleeping</li>
-                    <li>Upset stomach, bloating, constipation, or diarrhea</li>
-                    <li>Headache or backache</li>
-                    <li>Appetite changes or food cravings</li>
-                    <li>Joint or muscle pain</li>
-                    <li>Trouble with concentration or memory</li>
-                    <li>Tension, irritability, mood swings, or crying spells</li>
-                    <li>Anxiety or depression</li>
-                    <li>Headache or backache</li>
-                </ol>
-    <h2>During Your Period</h2>
-            The following three products are the three most commonly used sanitary products to prevent blood leakage. Some, like tampons and sanitary pads, can be used together. For more information, talk to your doctor.
-        <h3>Sanitary Pads</h3>
-            Sanitary pads in their most basic form have been used for centuries, and are still widely used today. They are also called sanitary napkins or menstrual pads, and come in many different sizes. Some women use only pads; others combine them with tampons on heavier days or only have them on hand for nighttime use. However, some women find that pads are uncomfortable or unsuitable for certain types of physical activity.
-                <p><img src="https://humannhealth.com/wp-content/uploads/2016/03/How-To-Use-a-Sanitary-Pad-700x373.jpg" alt="how to use a sanitary pad"><small>How to apply a pad.</small>
-        <h3>Tampons</h3>
-            Tampons, invented in the 1930s, are often chosen by women who want greater freedom in physical activities (such as swimming). As with sanitary pads, tampons are offered in various sizes and levels of absorbency. However, unlike pads, it’s highly recommended that women change their tampons at least every four to eight hours, use the lowest absorbency type, and not use tampons in between periods-- according to the National Women's Health Resource Center, Inc., “Some women may remember the connection between superabsorbent tampons and an outbreak of toxic shock syndrome (TSS) in the 1980s, but these "hyper absorbable" tampons were taken off the market and the incidence of toxic shock syndrome plummeted. However, there is some evidence that women who use tampons may have an increased risk of urinary tract infections.”
-                <img src="http://femininityonline.co.uk/wp-content/uploads/2015/09/non-applicator-tampon-insertion.png" alt="how to insert a tampon"><small>How to use a tampon.</small>
-        <h3>Menstrual Cups</h3>
-            Menstrual cups have been around ever since tampons were invented, and there are two kinds. The first kind is a soft, flexible, and disposable cup similar to a diaphragm. The second is a reusable bell-shaped cup made out of latex or silicone that is cleaned after use. Both types collect menstrual fluid rather than absorbing it. Some women prefer menstrual cups as tampon alternatives as they tend to leak 0.5 times less often and also can be safely worn for up to 12 hours-- allowing women to change the cup (on average) 2.8 times less frequently than when using either tampons or pads. However, some women find menstrual cups difficult to insert and remove.
-                <img src="http://www.greencupofmaine.com/wp-content/uploads/2016/01/Instructions-Inerting.jpg" alt="how to use a menstrual cup"> 
+<!--This calls the accordion button class, and lists the button names as well as the text viewed once the buttons are pressed.-->
+<h2>Before Your Period</h2>
+
+<button class="accordion">What is PMS?</button>
+<div class="panel">
+    <p>“PMS” stands for Premenstrual Syndrome-- basically, symptoms that a woman or girl may have for about a week to two weeks before they start menstruating. While symptoms like mild acne or food cravings can often be personally managed, it’s important to stay in communication with your doctor about your symptoms.</p>
+    </div>
+    
+<button class="accordion">Common Symptoms of PMS:</button>
+<div class="panel">
+    <ol>
+        <li><a href="http://www.thefashionspot.com/beauty/178315-control-pms-breakouts-the-natural-way/">Acne</a></li>
+        <li><a href="http://www.healthline.com/health/breast-premenstrual-tenderness-and-swelling">Swollen or tender breasts</a></li>
+        <li><a href="https://www.bustle.com/articles/155835-what-to-do-if-pms-your-period-make-you-unusually-tired">Feeling tired</a></li>
+        <li><a href="http://www.webmd.com/women/pms/features/why-pms-gives-you-insomnia#2">Trouble sleeping</a></li>
+        <li><a href="http://www.womenshealthmag.com/health/cures-for-common-stomach-pains-1">Upset stomach, bloating, constipation, or diarrhea</a></li>
+        <li><a href="http://www.headaches.org/2007/10/25/menstrual-migraine/">Headache or backache</a></li>
+        <li><a href="http://www.webmd.com/diet/features/is-pms-sabotaging-your-diet#1">Appetite changes or food cravings</a></li>
+        <li><a href="https://theperiodvitamin.com/joint-pains-pms.html">Joint or muscle pain</a></li>
+        <li><a href="http://www.pmscomfort.com/pms-pmdd-symptoms/pms-pmdd-brain-fog-concentration.aspx">Trouble with concentration or memory</a></li>
+        <li><a href="https://www.everydayhealth.com/pms/mood-swings.aspx">Tension, irritability, mood swings, or crying spells</a></li>
+        <li><a href="https://medlineplus.gov/ency/article/007193.htm">Anxiety or depression</a></li>
+    </ol>
+</div>
+    
+<h2>During Your Period</h2>
+<p>The following three products are the three most commonly used sanitary products to prevent blood leakage. Some, like tampons and sanitary pads, can be used together. For more information, talk to your doctor.</p>
+    
+<button class="accordion">Sanitary Pads</button>
+<div class="panel">
+    <p>Sanitary pads in their most basic form have been used for centuries, and are still widely used today. They are also called sanitary napkins or menstrual pads, and come in many different sizes. Some women use only pads; others combine them with tampons on heavier days or only have them on hand for nighttime use. However, some women find that pads are uncomfortable or unsuitable for certain types of physical activity.</p>
+    <img src="https://humannhealth.com/wp-content/uploads/2016/03/How-To-Use-a-Sanitary-Pad-700x373.jpg" alt="how to use a sanitary pad">
+</div>
+
+<button class="accordion">Tampons</button>
+<div class="panel">
+    <p>Tampons, invented in the 1930s, are often chosen by women who want greater freedom in physical activities (such as swimming). As with sanitary pads, tampons are offered in various sizes and levels of absorbency. However, unlike pads, it’s highly recommended that women change their tampons at least every four to eight hours, use the lowest absorbency type, and not use tampons in between periods-- according to the National Women's Health Resource Center, Inc., “Some women may remember the connection between superabsorbent tampons and an outbreak of toxic shock syndrome (TSS) in the 1980s, but these "hyper absorbable" tampons were taken off the market and the incidence of toxic shock syndrome plummeted. However, there is some evidence that women who use tampons may have an increased risk of urinary tract infections.”</p>
+    <img src="http://femininityonline.co.uk/wp-content/uploads/2015/09/non-applicator-tampon-insertion.png" alt="how to insert a tampon">
+</div>
+    
+<button class="accordion">Menstrual Cups</button>
+<div class="panel">
+    <p>Menstrual cups have been around ever since tampons were invented, and there are two kinds. The first kind is a soft, flexible, and disposable cup similar to a diaphragm. The second is a reusable bell-shaped cup made out of latex or silicone that is cleaned after use. Both types collect menstrual fluid rather than absorbing it. Some women prefer menstrual cups as tampon alternatives as they tend to leak 0.5 times less often and also can be safely worn for up to 12 hours-- allowing women to change the cup (on average) 2.8 times less frequently than when using either tampons or pads. However, some women find menstrual cups difficult to insert and remove.</p>
+    <img src="http://www.greencupofmaine.com/wp-content/uploads/2016/01/Instructions-Inerting.jpg" alt="how to use a menstrual cup"> 
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+                panel.style.maxHeight = null; 
+                } 
+            else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            }
+        }
+    </script>
+</div>
     <!--The following sets the background.-->
     <!--<style>
 body {
@@ -62,20 +129,21 @@ body {
     background-attachment: fixed;
 }
         </style>-->
-<!--The following is a list of sources k-->
+    
+<!--The following is a list of sources.-->
 <p> </p>
 Sources
 <small>
-        <ol>
-            <li><a href="https://www.womenshealth.gov/a-z-topics/premenstrual-syndrome">"Before Your Period" information</a></li>
-            <li><a href="http://www.healthywomen.org/content/article/tampons-pads-or-menstrual-cups-whats-right-you">Information for pads, tampons, and menstrual cups</a></li>
-            <li><a href="https://humannhealth.com/wp-content/uploads/2016/03/How-To-Use-a-Sanitary-Pad-700x373.jpg">Pad diagram</a></li>
-            <li><a href="http://femininityonline.co.uk/wp-content/uploads/2015/09/non-applicator-tampon-insertion.png">Tampon diagram</a></li>
-            <li><a href="http://www.greencupofmaine.com/wp-content/uploads/2016/01/Instructions-Inerting.jpg">Menstrual cup diagram</a></li>
-            <li><a href="http://www.designlovefest.com/wp-content/uploads/downloads/2014/07/WatercolorFlora2_by_JulieSongInk1.jpg">Background source</a></li>
+    <ol>
+        <li><a href="https://www.womenshealth.gov/a-z-topics/premenstrual-syndrome">"Before Your Period" information</a></li>
+        <li><a href="http://www.healthywomen.org/content/article/tampons-pads-or-menstrual-cups-whats-right-you">Information for pads, tampons, and menstrual cups</a></li>
+        <li><a href="https://humannhealth.com/wp-content/uploads/2016/03/How-To-Use-a-Sanitary-Pad-700x373.jpg">Pad diagram</a></li>
+        <li><a href="http://femininityonline.co.uk/wp-content/uploads/2015/09/non-applicator-tampon-insertion.png">Tampon diagram</a></li>
+        <li><a href="http://www.greencupofmaine.com/wp-content/uploads/2016/01/Instructions-Inerting.jpg">Menstrual cup diagram</a></li>
+        <li><a href="http://www.designlovefest.com/wp-content/uploads/downloads/2014/07/WatercolorFlora2_by_JulieSongInk1.jpg">Background source</a></li>
     </ol>
 </small>
-    </div>
-    </body>
-    </div>
+</div>
+</div>
+</body>
 </html>
