@@ -1,74 +1,163 @@
-body {
-    margin: 0;
-    background-color: lightpink;   
-    
-}
-.dots {
-    border-style: dotted;
-    border-width: 40px;
-}
+/*The following creates a page loader for every page.*/
+    #loader {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 1;
+      width: 150px;
+      height: 150px;
+      margin: -75px 0 0 -75px;
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid #3498db;
+      width: 120px;
+      height: 120px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
 
-.padding{
-    border: 1px solid grey;
-    background-color: white;
-    padding: 50px 30px 50px 80px;
-}
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
 
-.firstimage {
-    display: block;
-    margin-top: 0px;
-    width: 1200;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    background-color: white;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-}
-li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-    font-family: cursive;
-}
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
 
-li a.active {
-    background-color: dimgray;
+    /* Page loader: this adds animation to "page content" */
+    .animate-bottom {
+      position: relative;
+      -webkit-animation-name: animatebottom;
+      -webkit-animation-duration: 1s;
+      animation-name: animatebottom;
+      animation-duration: 1s
+    }
+
+    @-webkit-keyframes animatebottom {
+      from { bottom:-100px; opacity:0 } 
+      to { bottom:0px; opacity:1 }
+    }
+
+    @keyframes animatebottom { 
+      from{ bottom:-100px; opacity:0 } 
+      to{ bottom:0; opacity:1 }
+    }
+
+    #myDiv {
+      display: none;
+      text-align: center;
+    }
+
+/*This begins the main body styling.*/
+    body {
+        margin: 0;
+        background-color: lightpink;   
+
+    }
+    .dots {
+        border-style: groove;
+        border-width: 40px;
+    }
+
+    .padding{
+        border: 1px solid grey;
+        background-color: white;
+        padding: 50px 30px 50px 30px;
+    }
+
+    .firstimage {
+        display: block;
+        margin-top: 0px;
+        width: 1200;
+    }
+
+/*This is the sidebar menu settings.*/
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        background-image: url("http://img.funtema.ru/07082015/japangifs/13.gif");
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+    }
+    li a {
+        display: block;
+        color: midnightblue;
+        padding: 5px 1px;
+        text-decoration: none;
+        font-family: "Nixie One";
+        font-weight: bold;
+    }
+
+    li a.active {
+        background-color: steelblue;
+        color: white;
+    }
+
+    li a:hover:not(.active) {
+        background-color: gainsboro;
+        color: white;
+    }
+
+/*The following lists the different fonts used & their characteristics.*/
+    h1 {
+	font-family: "Nixie One";
     color: white;
-}
-
-li a:hover:not(.active) {
-    background-color: dimgray;
-    color: white;
-}
-
-h1 {
-    color: white;
+	font-size: 40px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
     text-align: center;
-    font-size:400%;
-    border-style: dotted;
-    border-width: 40px;
-    font-family: cursive;
-}
-h2{
-    color: black;
-    font-size: 200%;
-    font-family:monospace;
-}
+    }
+    
+    h2{
+        color: pink;
+        font-size: 200%;
+        font-family: "Dr Sugiyama";
+    }
 
-h3{
-    font-size:150%;
-    color: black;
-    font-family: fantasy;
-    
-    
-}
-p{
-    font-size: 125%;
-    color: black;
-}
+    h3{
+        font-size:150%;
+        color: #dcdcdc;
+        font-family: "Cabin";
+
+
+    }
+    p{
+        font-size: 100%;
+        font-family: "Old Standard TT";
+        color: black;
+        text-align: left;
+    }
+
+/*The following is the CSS for the drop-down button.*/
+    button.accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+
+            /*The color that the buttons change to when hovered over.*/
+            }
+            button.accordion.active, button.accordion:hover {
+                background-color: #ffc0cb;
+            }
+
+            /*This sets the color of the text box (once opened).*/
+            div.panel {
+                padding: 0 18px;
+                background-color: white;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+            }
