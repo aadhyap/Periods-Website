@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Period Homepage</title>
+    <!--This links this HTML file to the main CSS template.-->
+    <link rel="stylesheet" href="">
+    <!--This links this HTML file to the font templates.-->
+        <link href='https://fonts.googleapis.com/css?family=Dr+Sugiyama' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Old+Standard+TT' rel='stylesheet' type='text/css'>
+    
   <!-- Theme Made By www.w3schools.com - No Copyright -->
   <title>Bootstrap Theme Simply Me</title>
   <meta charset="utf-8">
@@ -11,7 +21,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
   body {
-      font: 20px Montserrat, sans-serif;
+      font: 20px "Nixie One", sans-serif;
       line-height: 1.8;
       color: #f5f6f7;
   }
@@ -47,14 +57,18 @@
       letter-spacing: 5px;
   }
   .navbar-nav  li a:hover {
-      color: red!important;
+      color: lightpink!important;
   }
   </style>
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-default">
+<!-- Navbar-->
+<nav class="navbar navbar-defult">
+    <a name="home">
+      <div id="home">
+      </div>
+    </a>
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -62,30 +76,32 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Home</a>
+      <a class="navbar-brand" href="#">Bloody Heck!</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li> <a href ="period_homepage.html"> <font color = "palevioletred" > Home </font> </a></li>
-        <li><a href="basic_bio.html">Biology</a></li>
-        <li><a href="cramps.html">Cramps</a></li>
-        <li><a href="how_to_deal_with_periods.html">How to deal with periods </a></li>
-        <li><a href="problems_around_the_world.html">Problems around the World</a></li>
-        <li> <a href = "meme_page.html"> Period Memes </a></li>
+
+    <button class="btn btn-danger navbar-btn"><a href="#home">Home</a></button>
+          
+    <button class="btn btn-danger navbar-btn"><a href="#home"><a href="#creators"><a href="#pages">Subjects</a></a></a></button>
+        
+    <button class="btn btn-danger navbar-btn"><a href="#home"><a href="#creators">Creators</a></a></button>
+
+    <a href="default.asp"><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="HTML tutorial" style="width:42px;height:42px;border:0;"></a>
       </ul>
     </div>
   </div>
 </nav>
+    
 
-<!-- Logo -->
-<div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Periods</h3>
-  <img src="http://3.bp.blogspot.com/-oZcOArcdRqQ/TtvYgtHSgVI/AAAAAAAAASM/jMiKSx3Nzfg/s500/Blood_Splatter.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>I aM nOt oN my pErIOd</h3>
-</div>
+
 
 <!-- I have no idea what to put in this gray box -->
 <div class="container-fluid bg-2 text-center">
+    <a name="pages">
+      <div id="pages">
+      </div>
+    </a>
   <h3 class="margin">What Am I?</h3>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
   <a href="#" class="btn btn-default btn-lg">
@@ -93,12 +109,16 @@
   </a>
 </div>
 
-<!-- Authors -->
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Creators</h3><br>
-  <div class="row">
+<!-- Creators -->
+<div class="container-fluid bg-3 text-center">
+    <a name="creators">
+      <div id="creators">
+      </div>
+    </a>
+    <h3 class="margin">Creators</h3><br>
+    <div class="row">
     <div class="col-sm-4">
-      <p>Aadhya Putter is Girls Who Code's pet alien from the outer rim.</p>
+      <p>Hello Children, bow down to me! My name is Aadhya and I am a rising junior at Chelmsford Highschool. Girls Who Code really opened my mind to many of the things you can do with coding and the various careers you can get with it. It thought me problem solving and now has directed me into hopefully majoring computer science in the future. In my free time I like to play the piano and play tennis.</p>
       <img src="https://scontent-iad3-1.xx.fbcdn.net/v/t31.0-8/19679241_472921266412076_9127934609199061760_o.jpg?oh=78a2171f86d86efd86d904a9dc972985&oe=5A2F3CDB" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
     <div class="col-sm-4"> 
@@ -114,7 +134,7 @@
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
+  <p>Bootstrap Theme Developed From <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
 </footer>
 
 </body>
