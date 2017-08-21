@@ -16,6 +16,10 @@
       animation: spin 2s linear infinite;
     }
 
+.dots{
+    border-style: solid;
+    border-width: 20px;
+}
     @-webkit-keyframes spin {
       0% { -webkit-transform: rotate(0deg); }
       100% { -webkit-transform: rotate(360deg); }
@@ -85,10 +89,11 @@
     li a {
         display: block;
         color: midnightblue;
-        padding: 5px 1px;
+        padding: 5px 5px;
         text-decoration: none;
         font-family: "Nixie One";
         font-weight: bold;
+        font-size: 20px;
     }
 
     li a.active {
