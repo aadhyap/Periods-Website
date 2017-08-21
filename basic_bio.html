@@ -1,56 +1,119 @@
-<!DOCTYPE>
+<DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="main_template.css">
-        <title>Biology</title>
+        <title>How to Deal With Periods</title>
+        
+        <!--This links this HTML file to the main CSS template.-->
+        <link rel="stylesheet" href="main_template.css">
+        
+        <!--This links this HTML file to the font templates.-->
+        <link href='https://fonts.googleapis.com/css?family=Dr+Sugiyama' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Old+Standard+TT' rel='stylesheet' type='text/css'>
     </head>
+
+    <!--This links this HTML file to the loading animation.-->
 <body>
-    
-<!--Side navigation between pages bar-->
-<div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li> <a href ="period_homepage.html"> Home </a></li>
-        <li><a href="basic_bio.html"> <font color = "palevioletred"> Biology </font> </a></li>
-        <li><a href="how_to_deal_with_periods.html">How to Deal with Periods </a></li>
-        <li><a href="cramps.html">Cramps</a></li>
-        <li><a href="problems_around_the_world.html">Problems around the World</a></li>
-        <li> <a href = "meme_page.html"> Period Memes </a></li>
-      </ul>
-</div>
+    <!--onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom"> -->
 
+    <!--This is formatting for the top bar and side directory bar-->    
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href ="period_homepage.html"> Home </a></li>
+            <li><a href="basic_bio.html"> <font color ="palevioletred"> Biology </font></a></li>
+            <li><a href="how_to_deal_with_periods.html"> How to Deal with Periods </a></li>
+            <li><a href="cramps.html">Cramps</a></li>
+            <li><a href="problems_around_the_world.html">Problems Around the World</a></li>
+            <li><a href = "meme_page.html"> Period Memes </a></li>
+        </ul>
+    </div>
 
-<div style="margin-left:25%;padding:1px 16px;height:4000px;"> <!-- where all the pink  box for the whole page starts --> 
+    <div style="margin-left:20%;padding:1px 16px;height:20px;">
 
-<h1>Biology</h1>
-    <div class = "padding">
-        <h2 style="text-align:center;"> <b>The Female Reproductive System</b></h2>
+    <h1> Biology </h1>
         <!-- Diagram of the reproductive system and then a definition of each part -->
         <img align = "right" src = "http://rubycup.com/wp-content/uploads/2014/11/Fem-repro-diagrams-2-Pink-gold-.png" height = "250 px"/>
-        <h3> The Parts: </h3>
-        <p> Fallopian Tube: The tube an egg travels down to get to the uterus. If an egg is to be fertilized, this is where the sperm will combine with the egg and form a zygote </p>
-        <p> Uterus: Also known as the womb, this is where a fetilized egg develops into a fetus during pregnancy. </p>
-        <p> Ovary: The small glands on opposite sides of the uterus which contains eggs before they are released into the Fallopian Tubes </p>
-        <p> Endometrium: The inner lining of the uterus which thickens during the mentsrual cycle in order to prepare to support a fetilized egg's growth into a fetus </p>
-        <p> Cervix: The tissue that connects the vagina and the uterus</p>
-        <p> Vagina: The tube that connects the cervix to the outside of the body. This is how a baby exits the mother during childbirth and how blood exits during menstration </p>
-        <p> Vulva: The name of all the external female genitalia in the pubic region, including the mons pubis, the labia majora, the labia minora, and the clotoris </p>
+        
+        <!--This calls the accordion button class, and lists the button names as well as the text viewed once the buttons are pressed.-->
+        <h2>The Female Reproductive System </h2>
 
-        <!-- Diagram of the menstrual cycle and then a description of each stage -->
-        <h2> The Stages of the Menstrual Cycle </h2>
+        <button class="accordion">The Parts </button>
+            <div class="panel">
+                <p> Fallopian Tube: The tube an egg travels down to get to the uterus. If an egg is to be fertilized, this is where the sperm will combine with the egg and form a zygote </p>
+                <p> Uterus: Also known as the womb, this is where a fetilized egg develops into a fetus during pregnancy. </p>
+                <p> Ovary: The small glands on opposite sides of the uterus which contains eggs before they are released into the Fallopian Tubes </p>
+                <p> Endometrium: The inner lining of the uterus which thickens during the mentsrual cycle in order to prepare to support a fetilized egg's growth into a fetus </p>
+                <p> Cervix: The tissue that connects the vagina and the uterus</p>
+                <p> Vagina: The tube that connects the cervix to the outside of the body. This is how a baby exits the mother during childbirth and how blood exits during menstration </p>
+                <p> Vulva: The name of all the external female genitalia in the pubic region, including the mons pubis, the labia majora, the labia minora, and the clotoris </p>
+            </div>
+        
+        <h2> The Menstrual Cycle </h2>
         <img src = "http://www.familyhealthonline.ca/fho/womenshealth/_images/WH_abnormalmens-1.jpg" />
-        <h3> Stage 1: The Period </h3>
-        <p> The uterus sheds its lining. This is the beginning of the menstrual cycle. During this time, a woman bleeds about 30-40 mls (about 5 to 10 teaspoons of blood) and experiences cramps. This stage usually lasts from two to seven days with the beginning days having the heaviest bleeding and most painful cramps. A period is considered heavy if the woman bleeds over 60 mls. About 90% of women bleed less than 80 mls during their period. </p>
-        <h3> Stage 2: Preparing the next egg </h3>
-        <p> A new egg gets prepared to be released from the ovary and the uterus lining beings to thicken in preparation for a fertilized egg to attach grow into a fetus. The thickening of the uterus occurs whether or not the egg will be fertilized later. </p>
-        <h3> Stage 3: Ovulation </h3>
-        <p> The egg is released from the ovary in a process called ovulation. During this time some women experience one sided cramps known as middleschmertz, the German word for “middle pain”.</p>
-        <h3> Stage 4: Traveling down the Fallopian Tube </h3>
-        <p> The egg continues down the fallopian tube on its way to the uterus which is continually thickening. </p>
-        <h3> Stage 5: Enter the uterus </h3>
-        <p> The egg reaches the uterus. If the egg is fertilized it will attach to the uterus wall and begin development. If not, the cycle begins again at stage one: menstruation. </p>
+        <button class="accordion">Stages of the Menstrual Cycle</button>
+        <div class="panel">
+            <h3> Stage 1: The Period </h3>
+                <p> The uterus sheds its lining. This is the beginning of the menstrual cycle. During this time, a woman bleeds about 30-40 mls (about 5 to 10 teaspoons of blood) and experiences cramps. This stage usually lasts from two to seven days with the beginning days having the heaviest bleeding and most painful cramps. A period is considered heavy if the woman bleeds over 60 mls. About 90% of women bleed less than 80 mls during their period. </p>
+            <h3> Stage 2: Preparing the next egg </h3>
+                <p> A new egg gets prepared to be released from the ovary and the uterus lining beings to thicken in preparation for a fertilized egg to attach grow into a fetus. The thickening of the uterus occurs whether or not the egg will be fertilized later. </p>
+            <h3> Stage 3: Ovulation </h3>
+                <p> The egg is released from the ovary in a process called ovulation. During this time some women experience one sided cramps known as middleschmertz, the German word for “middle pain”.</p>
+            <h3> Stage 4: Traveling down the Fallopian Tube </h3>
+                <p> The egg continues down the fallopian tube on its way to the uterus which is continually thickening. </p>
+            <h3> Stage 5: Enter the uterus </h3>
+                <p> The egg reaches the uterus. If the egg is fertilized it will attach to the uterus wall and begin development. If not, the cycle begins again at stage one: menstruation. </p>
+        </div>
+
+    <p></p>
+    <button class="accordion">Sources</button>
+    <div class="panel">
+        <p><a href="https://www.womenshealth.gov/a-z-topics/premenstrual-syndrome">"Before Your Period" information</a></p>
+        <p><a href="http://www.healthywomen.org/content/article/tampons-pads-or-menstrual-cups-whats-right-you">Information for pads, tampons, and menstrual cups</a></p>
+                <a href="https://humannhealth.com/wp-content/uploads/2016/03/How-To-Use-a-Sanitary-Pad-700x373.jpg">Pad diagram</a>
+                <a href="http://femininityonline.co.uk/wp-content/uploads/2015/09/non-applicator-tampon-insertion.png">Tampon diagram</a>
+                <a href="http://www.greencupofmaine.com/wp-content/uploads/2016/01/Instructions-Inerting.jpg">Menstrual cup diagram</a>
+                <a href="http://img.funtema.ru/07082015/japangifs/13.gif">Sidebar background</a>
+                <a href="http://freemusicarchive.org/music/Komiku/Its_time_for_adventure_/Komiku_-_Its_time_for_adventure_-_04_Barque_sur_le_lac">Music</a>
+        </div>
+
     </div>
-</div>
-
+        
+        <!--The following calls the accordion function.-->
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            for (i = 0; i < acc.length; i++) {
+                acc[i].onclick = function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight){
+                    panel.style.maxHeight = null; 
+                    } 
+                else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    } 
+                }
+            }
+        </script>
+ 
+    <script>
+    var myVar;
+    function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+    }
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
+        
+    <!--The following plays the background music on a continuous loop.-->
+    <audio hidden="" controls autoplay>
+        <source src="komiku_background_music.mp3" type="audio/mpeg">
+    </audio>
 </body>
-
 </html>
