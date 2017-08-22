@@ -1,11 +1,9 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="main_template.css">
-        <title>Meme Page</title>
-    </head>
-<!--This links this HTML file to the main CSS template.-->
+        <!--This links this HTML file to the main CSS template.-->
         <link rel="stylesheet" href="main_template.css">
+        <title>Meme Page</title>
         
         <!--This links this HTML file to the font templates.-->
         <link href='https://fonts.googleapis.com/css?family=Dr+Sugiyama' rel='stylesheet' type='text/css'>
@@ -13,55 +11,85 @@
         <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Old+Standard+TT' rel='stylesheet' type='text/css'>
-    
-<body>
-   
-    <div class="collapse navbar-collapse" id="myNavbar">
-        <center><ul class="nav navbar-nav navbar-right">
-            <li> <a href ="period_homepage.html"> Home </a></li>
-            <li><a href="basic_bio.html">Biology</a></li>  
-            <li><a href="how_to_deal_with_periods.html">How to Deal with Periods </a></li>
-            <li><a href="cramps.html">Cramps</a></li>
-            <li><a href="problems_around_the_world.html">Problems around the World</a></li>
-            <li> <a href = "meme_page.html"> <font color = "palevioletred"> Period Memes </font> </a></li>
-            <li><a href = "sources.html"> Sources</a></li>
-        </ul></center>
-      
-    <div style="margin-left:25%;padding:1px 16px;height:300px;">
-    
-    <h1>Meme Page</h1>
-<!--All them memes.-->
-<!-- Maybe add in alt tags for accessibility -->
-    <p>The following memes are profanity-free, but due to the nature of menstruation (i.e., blood), they’re not for the extreamely squeamish.</p>
-    <div class = "padding">
-        <div class="photo" align = "center">
-        <!-- starting image --> 
-        <img id = "period memes" src = "http://rainbows.typepad.com/.a/6a00d83451f6f769e201538e66f213970b-pi" height="600">
-        <!-- each image will show up when the button with its number is pushed -->
-       <p></p>
-       <button type = "button" onclick = 'document.getElementById("period memes").src = "https://pics.onsizzle.com/leeeeeeeeeegooooooooolaaaaaaaaas-waking-up-with-your-period-a-red-sun-rises-2787280.png"' height="600"> 1 </button>
-       <button type = "button" onclick = 'document.getElementById("period memes").src = "http://cdn.smosh.com/sites/default/files/2017/05/periodmeme-01.jpg"' height="600"> 2 </button>
-       <button type = "button" onclick = 'document.getElementById("period memes").src ="https://pics.me.me/when-you-sneeze-on-your-period-~icequeen~-5279494.png"' height="600"> 3 </button>
-       <button type = "button" onclick = 'document.getElementById("period memes").src = "https://s-media-cache-ak0.pinimg.com/originals/8c/77/28/8c7728eceee26c28470860095bc396e2.jpg"' height="600"> 4 </button>
-       <button type = "button" onclick = 'document.getElementById("period memes").src ="http://cdn.smosh.com/sites/default/files/2017/05/periodmeme-05.jpeg"' height="600"> 5 </button>
-       <button type = "button" onclick = 'document.getElementById("period memes").src ="https://img.buzzfeed.com/buzzfeed-static/static/2017-06/5/14/asset/buzzfeed-prod-fastlane-03/sub-buzz-16317-1496686451-9.png?downsize=715:*&output-format=auto&output-quality=auto"' height="600"> 6 </button>
-       <button type = "button" onclick = 'document.getElementById("period memes").src = "https://s-media-cache-ak0.pinimg.com/736x/91/82/a9/9182a9963276388e558082f5ceaa0813--funny-period-memes-period-humor.jpg"' height="600"> 7 </button>
-       <button type = "button" onclick = 'document.getElementById("period memes").src = "https://i.pinimg.com/736x/a6/d1/4a/a6d14adf6a49350ccbe677ddab5dfba4--sarah-anderson-humor-mexicano.jpg"' height="600"> 8 </button>
-       <button type = "button" onclick = 'document.getElementById("period memes").src = "https://s-media-cache-ak0.pinimg.com/736x/9f/20/82/9f2082a12fb98139beef5469a689e8ee--funny-memes-period-humor-hilarious.jpg"' height="600"> 9 </button>
-       <button type = "button" onclick = 'document.getElementById("period memes").src = "http://i.imgur.com/Xdo2YcE.png"' height="600"> 10 </button>
-       <button type = "button" onclick = 'document.getElementById("period memes").src = "https://img.memecdn.com/period_o_1710081.jpg"'height="600"> 11 </button>
-    </div> 
-<!--The following is a list of sources.-->
-<p> </p>
-       
+    </head>
 
-</div>
-</div>
-</div>
-        <!--The following plays the background music on a continuous loop.-->
-    <audio hidden="" controls autoplay>
-        <source src="komiku_background_music.mp3" type="audio/mpeg">
-    </audio>
+    <!--This links this HTML file to the loading animation.-->
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+
+        <!--This is formatting for the top bar and side directory bar-->    
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href ="period_homepage.html"> Home </a></li>
+                <li><a href="basic_bio.html">Biology</a></li>
+                <li><a href="how_to_deal_with_periods.html"> How to Deal with Periods </a></li>
+                <li><a href="cramps.html"> Cramps </a></li>
+                <li><a href="problems_around_the_world.html">Problems Around the World</a></li>
+                <li><a href = "meme_page.html"> <font color = "palevioletred">Period Memes </font></a></li>
+                <li> <a href = "sources.html"> Sources </a></li>
+            </ul>
+        </div>
+
+        <div style="margin-left:20%;padding:1px 16px;height:20px;">
+
+            <h1> Meme Page </h1>
+            <!--All them memes.-->
+            <p align ="center">The following memes are profanity-free, but due to the nature of menstruation (i.e., blood), the memes are not for the extreamely squeamish.</p>
+            <div class = "padding">
+                <div class="photo" align = "center">
+                    <!-- starting image --> 
+                    <img id = "period memes" src = "http://rainbows.typepad.com/.a/6a00d83451f6f769e201538e66f213970b-pi" height="600">
+                    <!-- each image will show up when the button with its number is pushed -->
+                    <p></p>
+                    <button type = "button" onclick = 'document.getElementById("period memes").src = "https://pics.onsizzle.com/leeeeeeeeeegooooooooolaaaaaaaaas-waking-up-with-your-period-a-red-sun-rises-2787280.png"' height="600"> 1 </button>
+                    <button type = "button" onclick = 'document.getElementById("period memes").src = "http://cdn.smosh.com/sites/default/files/2017/05/periodmeme-01.jpg"' height="600"> 2 </button>
+                    <button type = "button" onclick = 'document.getElementById("period memes").src ="https://pics.me.me/when-you-sneeze-on-your-period-~icequeen~-5279494.png"' height="600"> 3 </button>
+                    <button type = "button" onclick = 'document.getElementById("period memes").src = "https://s-media-cache-ak0.pinimg.com/originals/8c/77/28/8c7728eceee26c28470860095bc396e2.jpg"' height="600"> 4 </button>
+                    <button type = "button" onclick = 'document.getElementById("period memes").src ="http://cdn.smosh.com/sites/default/files/2017/05/periodmeme-05.jpeg"' height="600"> 5 </button>
+                    <button type = "button" onclick = 'document.getElementById("period memes").src ="https://img.buzzfeed.com/buzzfeed-static/static/2017-06/5/14/asset/buzzfeed-prod-fastlane-03/sub-buzz-16317-1496686451-9.png?downsize=715:*&output-format=auto&output-quality=auto"' height="600"> 6 </button>
+                    <button type = "button" onclick = 'document.getElementById("period memes").src = "https://s-media-cache-ak0.pinimg.com/736x/91/82/a9/9182a9963276388e558082f5ceaa0813--funny-period-memes-period-humor.jpg"' height="600"> 7 </button>
+                    <button type = "button" onclick = 'document.getElementById("period memes").src = "https://i.pinimg.com/736x/a6/d1/4a/a6d14adf6a49350ccbe677ddab5dfba4--sarah-anderson-humor-mexicano.jpg"' height="600"> 8 </button>
+                    <button type = "button" onclick = 'document.getElementById("period memes").src = "https://s-media-cache-ak0.pinimg.com/736x/9f/20/82/9f2082a12fb98139beef5469a689e8ee--funny-memes-period-humor-hilarious.jpg"' height="600"> 9 </button>
+                    <button type = "button" onclick = 'document.getElementById("period memes").src = "http://i.imgur.com/Xdo2YcE.png"' height="600"> 10 </button>
+                    <button type = "button" onclick = 'document.getElementById("period memes").src = "https://img.memecdn.com/period_o_1710081.jpg"'height="600"> 11 </button> 
+                </div>
+            </div>
+        </div>
+    </div>
+        
+<!--The following calls the accordion function.-->
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+            panel.style.maxHeight = null; 
+            } 
+        else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+        }
+    }
+</script>
+        
+<script>
+    var myVar;
+    function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+    }
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+</script>
+        
+<!--The following plays the background music on a continuous loop.-->
+<audio hidden="" controls autoplay>
+    <source src="komiku_background_music.mp3" type="audio/mpeg">
+</audio>
 </body>
-
 </html>
