@@ -119,6 +119,10 @@ input[type=text]:focus {
           .navbar-nav  li a:hover {
               color: lightpink!important;
             }
+#whitebox{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 /*Main page body styling.*/
   .margin {margin-bottom: 45px;}
