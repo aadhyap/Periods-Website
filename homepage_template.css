@@ -37,7 +37,6 @@ input[type=text] {
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
-
 input[type=text]:focus {
     width: 100%;
 }*/
@@ -217,7 +216,7 @@ input[type=text]:focus {
 }
 
 .buttonproblems{
-    background: url(https://static01.nyt.com/images/2012/10/03/opinion/03fixes-clothing/03fixes-clothing-blog427.jpg); /* Green */
+    background: url(http://www.thehindu.com/migration_catalog/article12532040.ece/alternates/FREE_660/19SOMANEW6); /* Green */
     border: none;
     color: white;
     padding: 1% 1%;
@@ -236,7 +235,7 @@ input[type=text]:focus {
     transition-duration: 0.4s;
 }
 .buttonmemes{
-    background: url(https://s-media-cache-ak0.pinimg.com/736x/3d/5c/79/3d5c795e7b1666c3c50eddc6f6d58aa7--period-hacks-period-tips.jpg); /* Green */
+    background: url(https://i.pinimg.com/originals/29/29/e4/2929e470710350b12d9b3a55d724d3d7.jpg); /* Green */
     border: none;
     color: white;
     padding: 1% 1%;
