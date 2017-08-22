@@ -71,6 +71,13 @@ input[type=text]:focus {
         font-weight: bold;
         font-size: 20px;
             }
+        #h5 {
+            font-family: "Nixie One";
+            color: lightpink;
+            font-size: 15px;
+            font-weight: bolder;
+            text-align: center;
+            }
         #p{
             font-size: 100%;
             font-family: "Old Standard TT";
