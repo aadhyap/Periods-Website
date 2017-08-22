@@ -25,6 +25,7 @@
         
 <!--Navbar-->
 <body>
+<div class="header">
 <nav class="navbar navbar-defult">
     <a name="home">
       <div id="home"> </div>
@@ -38,24 +39,23 @@
           </button>
             
         
-            <a class="navbar-brand" id="h1">Bloody Heck!</a>
+            <a class="navbar-brand" id="h1">Code Red</a>
                 <div class="collapse navbar-collapse" id="myNavbar">
-                    <div float: right;>
-                        <div class="btn-group-right">
-                            <a href="#home"><img src="http://www.iconsdb.com/icons/preview/pink/home-4-xxl.png" alt="Home Logo" style="width:42px;height:42px;border:0;"></a>
-                            
-                            <a href="#pages"><img src="https://cdn1.iconfinder.com/data/icons/Akisame_iconset_by_MagcWindw/512/Ak_Folder_Candy.png" alt="Subjects Logo"style="width:57px;height:57px;border:0;"></a>
+                    <right>
+                            <a href="#home"><img src="http://www.iconsdb.com/icons/preview/pink/home-4-xxl.png" alt="Home Logo" style="width:42px;height:42px;border:0;" id="github"></a>
+                                                        
+                            <button class="btn btn-default navbar-btn"><a href="#pages" id="h5">Pages</a></button>
                             
                             <button class="btn btn-default navbar-btn"><a href="#creators" id="h5">Creators</a></button>
                             
                             <a href="https://github.com/aadhyap/periods" id="github"><img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="GitHub Logo" style="width:42px;height:42px;border:0;"></a>
-                        </div>
-                    </div>
+                    </right>
                 </div>
             </div>
         </div>
     </nav>
-
+    </div>
+<div class="content">
 <!-- Buttons to subpages. -->
 <br>
 <div class = "padding" id ="whitebox">
@@ -128,6 +128,7 @@
 <footer class="container-fluid bg-4 text-center">
   <p>Bootstrap Theme Developed From <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
 </footer>
+    </div>
     
 <!--The following plays the background music on a continuous loop.-->
     <audio hidden="" controls autoplay>
