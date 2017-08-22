@@ -1,10 +1,9 @@
 <DOCTYPE html>
 <html>
     <head>
-        <title>How to Deal With Periods</title>
-        
         <!--This links this HTML file to the main CSS template.-->
         <link rel="stylesheet" href="main_template.css">
+        <title>Basic Biology</title>
         
         <!--This links this HTML file to the font templates.-->
         <link href='https://fonts.googleapis.com/css?family=Dr+Sugiyama' rel='stylesheet' type='text/css'>
@@ -15,32 +14,34 @@
     </head>
 
     <!--This links this HTML file to the loading animation.-->
-<body>
-    <!--onload="myFunction()" style="margin:0;">
+<body onload="myFunction()" style="margin:0;">
     <div id="loader"></div>
-    <div style="display:none;" id="myDiv" class="animate-bottom"> -->
+    <div style="display:none;" id="myDiv" class="animate-bottom">
 
     <!--This is formatting for the top bar and side directory bar-->    
     <div class="collapse navbar-collapse" id="myNavbar">
-        <center><ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right">
             <li><a href ="period_homepage.html"> Home </a></li>
-            <li><a href="basic_bio.html"> <font color ="palevioletred"> Biology </font></a></li>
+            <li><a href="basic_bio.html"><font color = "palevioletred">Biology</font></a></li>
             <li><a href="how_to_deal_with_periods.html"> How to Deal with Periods </a></li>
-            <li><a href="cramps.html">Cramps</a></li>
+            <li><a href="cramps.html"> Cramps </a></li>
             <li><a href="problems_around_the_world.html">Problems Around the World</a></li>
             <li><a href = "meme_page.html"> Period Memes </a></li>
             <li> <a href = "sources.html"> Sources </a></li>
-            </ul></center>
+        </ul>
     </div>
 
     <div style="margin-left:20%;padding:1px 16px;height:20px;">
 
-    <h1> Biology </h1>
+        <h1> Biology </h1>
         <!-- Diagram of the reproductive system and then a definition of each part -->
+
+            <!--This calls the accordion button class, and lists the button names as well as the text viewed once the buttons are pressed.-->
+        <div class = "padding"><center>
+             This page is to help the readers understand a little bit about what happens during periods and why females have them. It's to help readers understand that this is a perfectly normal proccess for women and why its important to have periods. Here we want to explain the basic biology of what is happening during menstruation.</center>
+        </div>
+        <p> </p>
         
-        <!--This calls the accordion button class, and lists the button names as well as the text viewed once the buttons are pressed.-->
-    <div class = "padding"><center>
-         This page is to help the readers understand a little bit about what happens during periods and why females have them. It's to help readers understand that this is a perfectly normal proccess for women and why its important to have periods. Here we want to explain the basic biology of what is happening during menstruation.</center></div>
         <button class="accordion">The Female Reproductive System</button>
             <div class="panel">
                 <img align = "center" src = "http://rubycup.com/wp-content/uploads/2014/11/Fem-repro-diagrams-2-Pink-gold-.png" height = "250 px"/>
@@ -67,26 +68,30 @@
             <h3> Stage 5: Enter the uterus </h3>
                 <p> The egg reaches the uterus. If the egg is fertilized it will attach to the uterus wall and begin development. If not, the cycle begins again at stage one: menstruation. </p>
         </div>
-        </div>        
-        <!--The following calls the accordion function.-->
-        <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-            for (i = 0; i < acc.length; i++) {
-                acc[i].onclick = function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight){
-                    panel.style.maxHeight = null; 
-                    } 
-                else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                    } 
-                }
-            }
-        </script>
- 
-    <script>
+        <p> </p>
+        <center><img src = "https://cdn2.omidoo.com/sites/default/files/imagecache/full_width/images/bydate/201411/shutterstock86020333.jpg" height ="1500%"></center>
+    </div>    
+    </div>
+        
+<!--The following calls the accordion function.-->
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+            panel.style.maxHeight = null; 
+            } 
+        else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+        }
+    }
+</script>
+        
+<script>
     var myVar;
     function myFunction() {
         myVar = setTimeout(showPage, 3000);
@@ -95,11 +100,11 @@
       document.getElementById("loader").style.display = "none";
       document.getElementById("myDiv").style.display = "block";
     }
-    </script>
+</script>
         
-    <!--The following plays the background music on a continuous loop.-->
-    <audio hidden="" controls autoplay>
-        <source src="komiku_background_music.mp3" type="audio/mpeg">
-    </audio>
+<!--The following plays the background music on a continuous loop.-->
+<audio hidden="" controls autoplay>
+    <source src="komiku_background_music.mp3" type="audio/mpeg">
+</audio>
 </body>
 </html>
